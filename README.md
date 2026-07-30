@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Dashboard Simulation — JavaScript Async Patterns
 
 A small project demonstrating synchronous vs. asynchronous execution in JavaScript by simulating a dashboard load sequence (login → profile → posts → comments → notifications) three different ways.
@@ -75,3 +76,6 @@ Because Promise callbacks go into the microtask queue, and the event loop's rule
 | **Callbacks** | Simple, no extra syntax; supported everywhere | Deep nesting ("callback hell") for sequential async steps; error handling has to be manually repeated at every level; easy to create bugs (e.g. calling a callback twice) | Simple, one-off async operations, or working with older APIs that only support callbacks |
 | **Promises** | Flattens nesting into a `.then()` chain; centralized error handling with `.catch()`; composable (`Promise.all`, `Promise.race`) | Chains can still get long; `.then()` syntax is less readable than plain sequential code; easy to forget a `.catch()` | Sequential or parallel async workflows where you want cleaner composition than callbacks |
 | **Async/Await** | Reads like synchronous code, easiest to follow; error handling via familiar `try/catch`; easy to mix with loops and conditionals | Requires understanding Promises underneath; overusing sequential `await` can accidentally serialize things that could run in parallel (needs `Promise.all` for that) | Most modern application code — the default choice for readability and maintainability |
+=======
+# JS-assignment
+>>>>>>> a1250bc921052904f1173274d2aa26f602fb004c
